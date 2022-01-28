@@ -1,0 +1,133 @@
+body,
+div,
+table,
+tr,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(236, 236, 236);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Normal", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#menu h1 {
+  width: 330px;
+  text-align: center;
+  background-color: rgba(137, 43, 226, 0.226);
+  border-radius: 8px;
+  color: rgba(3, 7, 236, 0.747);
+  font-size: 50px;
+  font-weight: normal;
+  text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.452);
+}
+
+#menu button {
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 2px groove black;
+  background-color: rgb(243, 243, 243);
+  margin-bottom: 30px;
+}
+
+#menu button:hover {
+  color: rgb(146, 19, 19);
+  font-size: 20px;
+  border: 2px groove black;
+  background-color: rgba(17, 156, 103, 0.192);
+  cursor: pointer;
+}
+
+.tabelas {
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu-tabela {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(128, 255, 0, 0.281);
+  padding-left: 5px;
+}
+.menu-tabela td {
+  padding: 5px;
+  text-align: center;
+}
+
+#tabela table {
+  border-collapse: collapse;
+}
+
+#tabela td {
+  border: 1px solid black;
+  width: 180px;
+  padding-left: 5px;
+  height: 30px;
+}
+
+.soma {
+  color: rgb(66, 12, 12);
+  font-weight: 600;
+}
+
+#tbl-grafico table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+#tbl-grafico .cor1 {
+  border: 5px solid indigo;
+}
+
+#tbl-grafico .cor2 {
+  border: 5px solid lawngreen;
+}
+
+#tbl-grafico td {
+  border: 1px solid black;
+  padding-left: 15px;
+  height: 30px;
+}
+
+@media screen and (max-width: 990px) {
+  .tabelas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tabelas #tabela {
+    margin-bottom: 25px;
+  }
+
+  .tabelas #tbl-grafico {
+    margin-bottom: 25px;
+  }
+
+  #tabela table {
+    width: 441.52px;
+  }
+
+  #menu button:active {
+    color: rgb(51, 218, 10);
+    font-size: 20px;
+    border: 2px groove black;
+    background-color: rgba(151, 190, 8, 0.336);
+  }
+}
